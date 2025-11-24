@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --honey: #f59e0b;
+    --honey-dark: #d97706;
+    --honey-light: #fbbf24;
+    --milk: #fef3c7;
+    --cream: #fffbeb;
+    --text: #292524;
+    --text-light: #78716c;
+    --bg: #fffef9;
+    --bg-secondary: #fefce8;
+    --border: #fde68a;
+    --hive: #a16207;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Subtle honeycomb pattern background */
+.honeycomb-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        repeating-linear-gradient(60deg, transparent, transparent 50px, var(--milk) 50px, var(--milk) 51px),
+        repeating-linear-gradient(120deg, transparent, transparent 50px, var(--milk) 50px, var(--milk) 51px),
+        repeating-linear-gradient(180deg, transparent, transparent 50px, var(--milk) 50px, var(--milk) 51px);
+    opacity: 0.15;
+    z-index: -1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 0;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 3rem;
+    background: linear-gradient(to bottom, var(--cream) 0%, transparent 100%);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.bee-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--hive);
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: var(--text-light);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--hive);
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, var(--honey), var(--honey-light));
+    border-radius: 2px;
+}
+
+.about p {
+    font-size: 1.125rem;
+    color: var(--text-light);
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border);
+    border-radius: 0.75rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.link-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, var(--milk), transparent);
+    transition: left 0.5s ease;
+}
+
+.link-card:hover::before {
+    left: 100%;
+}
+
+.link-card:hover {
+    background: linear-gradient(135deg, var(--honey) 0%, var(--honey-light) 100%);
+    color: white;
+    border-color: var(--honey-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(245, 158, 11, 0.3);
+}
+
+.link-card .icon {
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.link-card .link-text {
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+.coming-soon {
+    color: var(--text-light);
+    font-style: italic;
+}
+
+footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--border);
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.875rem;
+}
+
+.footer-tagline {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .bee-icon {
+        font-size: 2.5rem;
+    }
+    
+    .link-grid {
+        grid-template-columns: 1fr;
+    }
+}
