@@ -1,6 +1,10 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+title: Home
 ---
+
+## Welcome 
+
+Once I have something to show it will go here. Until then, carry on.
+
+Feel free to get in contact. Always love chatting about games and game dev. Would love to find a partner to work with.
