@@ -4,8 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Not much here, is there?
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
-Hobbyist game developer. Playing around and thought I should have a website. Always enjoy trying new things.
+You can find the source code for Minima at GitHub:
+[jekyll][jekyll-organization] /
+[minima](https://github.com/jekyll/minima)
 
-The blog will largely be a journal to talk about hobby game development. Probably lighter on the technical descriptions - I've never been great at that.
+You can find the source code for Jekyll at GitHub:
+[jekyll][jekyll-organization] /
+[jekyll](https://github.com/jekyll/jekyll)
+
+
+[jekyll-organization]: https://github.com/jekyll
