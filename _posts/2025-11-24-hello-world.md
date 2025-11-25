@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Hello, World! Plans for the blog."
+title:  "Plans for the Blog"
 date:   2025-11-24
-tags: website gamedev
+tags: about gamedev
 ---
 
 Obviously, this is my first post. Feel free to ignore it.
