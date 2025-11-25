@@ -1,10 +1,12 @@
 ---
 layout: home
-title: Home
 ---
 
-## Welcome 
+### Welcome
 
-Once I have something to show it will go here. Until then, carry on.
+Once I have something to show, it will go here above the posts. Until then, carry on.
 
-Feel free to get in contact. Always love chatting about games and game dev. Would love to find a partner to work with.
+Feel free to get in touch. Would love to partner up and make something cool.
+
+---
+# Posts

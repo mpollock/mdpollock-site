@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Hello, World! Blog intro."
-date:   2025-11-24 14:23:25 -0500
-categories: website gamedev
+title:  "Hello, World! Plans for the blog."
+date:   2025-11-24
+tags: website gamedev
 ---
-
-# Hi, I'm Michael!
 
 Obviously, this is my first post. Feel free to ignore it.
 
-My plans for the blog, broadly, are to have a place to journal about what I'm doing and learning in the game dev space.
+#### Plans for the blog
+
+Broadly, to have a place to journal about what I'm doing and learning in the game dev space.
 
 More specifically, I want the next few posts to be:
 - Introduction. Where I'm coming from. This one will be broadly ignorable, probably.
